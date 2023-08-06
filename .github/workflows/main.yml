@@ -23,12 +23,9 @@ jobs:
             6.0.x
             7.0.x
             8.0.x
-          source-url: https://nuget.pkg.github.com/WolfBublitz/index.json
-        env:
-          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - run: dotnet build
       - name: Create the package
         run: dotnet pack --configuration Release
       - name: Publish the package to GPR
-        run: dotnet nuget push src/bin/Release/*.nupkg
+        run: dotnet nuget push src/bin/Release/*.nupkg -k ${{secrets.GITHUB_TOKEN}} -s https://nuget.pkg.github.com/WolfBublitz/index.json
 
