@@ -8,6 +8,7 @@
   </Rules>
 
   <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+    <!-- SA1101PrefixLocalCallsWithThis -->
     <Rule Id="SA1101" Action="None" />
   </Rules>
 </RuleSet>
