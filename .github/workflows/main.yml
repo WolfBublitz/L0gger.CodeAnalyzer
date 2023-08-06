@@ -24,14 +24,15 @@ jobs:
               6.0.x
               7.0.x
               8.0.x
+            source-url: https://nuget.pkg.github.com/WolfBublitz/index.json
+          env:
+            NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         - name: Install dependencies
           working-directory: ./src
           run: dotnet restore
         - name: Create NuGet Package
           run: dotnet pack --configuration Release
         - name: Publish NuGet Package to Github
-          run: dotnet nuget push src/bin/Release/*.nupkg -s https://nuget.pkg.github.com/WolfBublitz/index.json -k ${GITHUB_TOKEN}
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          run: dotnet nuget push src/bin/Release/*.nupkg
           if: startsWith(github.ref, 'refs/tags/')
 
