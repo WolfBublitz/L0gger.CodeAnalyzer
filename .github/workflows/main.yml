@@ -11,7 +11,7 @@ on:
       - created
 
 jobs:
-  build_net6:
+  build:
 
     runs-on: ubuntu-latest
 
