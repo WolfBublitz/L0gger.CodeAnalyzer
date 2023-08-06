@@ -28,7 +28,7 @@
       <Pack>true</Pack>
       <PackagePath>build</PackagePath>
     </None>
-    <None Include="AnyLog.CodeAnalyzer.props">
+    <None Include="L0gg3r.CodeAnalyzer.props">
       <Pack>true</Pack>
       <PackagePath>build</PackagePath>
     </None>
