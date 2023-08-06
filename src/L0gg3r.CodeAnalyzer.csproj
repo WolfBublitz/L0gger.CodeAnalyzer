@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
+    <Authors>Wolf Bublitz</Authors>
+    <Product>L0gg3r.CodeAnalyzer</Product>
+    <RepositoryUrl>https://github.com/WolfBublitz/L0gg3r.CodeAnalyzer</RepositoryUrl>
+  </PropertyGroup>
+
+  <!-- Release Build Settings -->
+  <PropertyGroup Condition="$(Configuration.Contains('Release'))">
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <!-- Debug Build Settings -->
+  <PropertyGroup Condition="$(Configuration.Contains('Debug'))">
+    <AssemblyName>$(Product).Debug</AssemblyName>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+
+  <!-- Additional Code Analyzer files -->
+  <ItemGroup>
+    <None Include="analysis.ruleset">
+      <Pack>true</Pack>
+      <PackagePath>build</PackagePath>
+    </None>
+    <None Include="stylecop.json">
+      <Pack>true</Pack>
+      <PackagePath>build</PackagePath>
+    </None>
+    <None Include="AnyLog.CodeAnalyzer.props">
+      <Pack>true</Pack>
+      <PackagePath>build</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+		<PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.507" />
+  </ItemGroup>
+
+</Project>

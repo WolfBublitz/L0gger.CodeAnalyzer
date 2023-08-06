@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L0gg3r.CodeAnalyzer", "src\L0gg3r.CodeAnalyzer.csproj", "{49E6E412-72B4-436F-98C1-6497CC583BDE}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49180CF6-0972-4CE4-9ECB-662D5DACB31B}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49E6E412-72B4-436F-98C1-6497CC583BDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E6E412-72B4-436F-98C1-6497CC583BDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49E6E412-72B4-436F-98C1-6497CC583BDE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{49E6E412-72B4-436F-98C1-6497CC583BDE}.Debug|x64.Build.0 = Debug|Any CPU
+		{49E6E412-72B4-436F-98C1-6497CC583BDE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{49E6E412-72B4-436F-98C1-6497CC583BDE}.Debug|x86.Build.0 = Debug|Any CPU
+		{49E6E412-72B4-436F-98C1-6497CC583BDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49E6E412-72B4-436F-98C1-6497CC583BDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49E6E412-72B4-436F-98C1-6497CC583BDE}.Release|x64.ActiveCfg = Release|Any CPU
+		{49E6E412-72B4-436F-98C1-6497CC583BDE}.Release|x64.Build.0 = Release|Any CPU
+		{49E6E412-72B4-436F-98C1-6497CC583BDE}.Release|x86.ActiveCfg = Release|Any CPU
+		{49E6E412-72B4-436F-98C1-6497CC583BDE}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
